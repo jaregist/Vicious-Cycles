@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Vicious Cycles | Custom Builds</title>
+</head>
+<body>
+    <header>
+        <img src="./images/Vicious-Cycle-Logo.png" alt="Vicious Cycles Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bicycles.html">Bicycles</a></li>
+            <li><a href="parts.html">Parts & Accessories</a></li>
+            <li><a href="newlyadded.html">Newly Added</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="custom.html" class="selected">Custom Builds</a></li>
+        </ul>
+    </nav>
+    <main>
+      <!--Section containing info about Vicious Cycles custom builds-->
+      <section class="bulletinleft">
+        <h2>Custom Builds</h2>
+        <p>
+            We are proud of what we do and like to show off what we build but, we prefer to discuss pricing and 
+            detailed ideas and timelines in person. See some of our previous builds below and if you want to get
+            started on your own, fill out the form to the right and we will give you call or email to schedule a 
+            consultation.
+        </p>
+        <div class="imagecontainer">
+            <img class="fixed" src="./images/fixed_gear.jpg" alt="custom build: fixed gear bike" width="150" height="106">
+            <img class="mountain" src="./images/mountain_bike.jpg" alt="custom build: mountain bike" width="150" height="106">
+            <img class="bmx" src="./images/bmx_bike.jpg" alt="custom build: bmx bike" width="150" height="106">
+            <img class="cruiser" src="./images/cruiser_bike.jpg" alt="custom build: cruiser bike" width="150" height="106">
+        </div>
+      </section>
+      <section class="bulletinright">
+        <h2>Tell Us More</h2>
+        <form id="signup" method="POST" action="URL">
+            <label for="name">Enter First Name: </label>
+            <input type="text" name="name" id="name" required aria-required="true">
+
+            <label for="phonetwo">Enter Phone Number: </label>
+            <input type="tel" name="phonetwo" id="phonetwo">
+
+            <label for="emailtwo">Enter Email Address: </label>
+            <input type="email" name="emailtwo" id="emailtwo" required aria-required="true" placeholder="email@example.com">
+
+            <label for="tellusmore">Tell us about your custom build ideas:</label>
+            <textarea id="tellusmore" name="tellusmore"></textarea>
+
+            <fieldset>
+                <legend>How would you like us to contact you?</legend>
+
+                <label for="email">
+                    <input type="radio" name="contactoption" value="email" id="email" checked>
+                    Email
+                </label>
+                <br>
+                
+                <label for="phone">
+                    <input type="radio" name="contactoption" value="phone" id="phone">
+                    Phone
+                </label>
+                <br>
+            </fieldset>
+            <!--Submit button-->
+            <input type="submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+        <h3>2020 &copy; Register joregister@my.waketech.edu</h3>
+        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter_logo.png" width="35" height="35" alt="twitter logo"></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" width="35" height="35" alt="facebook logo"></a>
+    </footer>
+</body>
+</html>

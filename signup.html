@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Vicious Cycles | Sign Up</title>
+</head>
+<body>
+    <header>
+        <img src="./images/Vicious-Cycle-Logo.png" alt="Vicious Cycles Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bicycles.html">Bicycles</a></li>
+            <li><a href="parts.html">Parts & Accessories</a></li>
+            <li><a href="newlyadded.html">Newly Added</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="custom.html">Custom Builds</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Email List & Raffle</h2>
+        <p>
+            Fill out the form below for a chance to win a $100 gift card to our store and to stay
+            up-to-date with the latest news, best deals, and all the best cycling events in and
+            around Durham, NC.
+        </p>
+        <hr>
+        <br>
+        <br>
+        <form id="signup" method="POST" action="URL">
+            <!--At least 3 text boxes (Name, Phone, Email)-->
+            <label for="name">Enter First Name: </label>
+            <input type="text" name="name" id="name" required aria-required="true">
+
+            <label for="phone">Enter Phone Number: </label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="email">Enter Email Address: </label>
+            <input type="email" name="email" id="email" required aria-required="true" placeholder="email@example.com">
+
+            <!--At least 1 text area (How did you hear about us)-->
+            <label for="heardaboutus">How did you hear about us?</label>
+            <textarea id="heardaboutus" name="heardaboutus"></textarea>
+
+            <!--At least 1 dropdown selection list (Favorite type of bike MTB of Road Bike)-->
+            <label for="biketype">What is your favorite type of bicycle?</label>
+            <select name="biketype" id="biketype">
+                <option value="mtb">Mountain Bikes</option>
+                <option value="roadbike">Road Bikes</option>
+                <option value="bmx">BMX Bikes</option>
+            </select>
+
+            <!--At least 3 checkboxes (Which products/services interested in)-->
+            <fieldset>
+                <legend>Which Products & Services are you most interested in?</legend>
+                
+                <label for="bikes">
+                    <input type="checkbox" name="favproduct" value="bikes" id="bikes">
+                    Bicycles
+                </label>
+                <br>
+
+                <label for="bikeparts">
+                    <input type="checkbox" name="favproduct" value="bikeparts" id="bikeparts">
+                    Parts
+                </label>
+                <br>
+
+                <label for="bikeaccs">
+                    <input type="checkbox" name="favproduct" value="bikeaccs" id="bikeaccs">
+                    Accessories
+                </label>
+                <br>
+
+            </fieldset>
+
+            <!--At least 2 radio buttons (only 1 selected at a time - Sign up for email updates/coupons yes or no)-->
+            <fieldset>
+                <legend>Would you like to sign up for email updates?</legend>
+
+                <label for="yes">
+                    <input type="radio" name="custlist" value="yes" id="yes" checked>
+                    Yes
+                </label>
+                <br>
+                
+                <label for="no">
+                    <input type="radio" name="custlist" value="no" id="no">
+                    No
+                </label>
+                <br>
+            </fieldset>
+
+            <!--Submit button-->
+            <input type="submit">           
+        </form>
+        <a class="return" href="index.html">Return Home</a>
+        
+    </main>
+    <footer>
+        <h3>2020 &copy; Register joregister@my.waketech.edu</h3>
+        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter_logo.png" width="35" height="35" alt="twitter logo"></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" width="35" height="35" alt="facebook logo"></a>
+    </footer>
+</body>
+</html>
